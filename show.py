@@ -12,7 +12,7 @@ from torch.utils.data import DataLoader
 from torch.optim.lr_scheduler import MultiStepLR
 import settings as settings
 from dataset import ShowDataset
-from model import WFDST_Net
+from model import Multi_level_Wavelet_Network_Based_on_CNN_Transformer_Hybrid_Attention as MWN_CTHA
 from cal_ssim import SSIM
 
 logger = settings.logger
@@ -50,9 +50,9 @@ class Session:
         logger.info('set show dir as %s' % settings.show_dir)
         logger.info('set model dir as %s' % settings.model_dir)
         if torch.cuda.is_available():
-            self.net = WFDST_Net().cuda()
+            self.net = MWN_CTHA().cuda()
         if len(device_ids) > 1:
-            self.net = nn.DataParallel(WFDST_Net()).cuda()
+            self.net = nn.DataParallel(MWN_CTHA()).cuda()
         self.opt_net = Adam(self.net.parameters(), lr=settings.lr)
         self.sche_net = MultiStepLR(self.opt_net, milestones=[settings.l1, settings.l2], gamma=0.1)
         self.ssim = SSIM().cuda()
