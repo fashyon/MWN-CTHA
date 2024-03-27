@@ -38,7 +38,7 @@ Rain12: [Link](https://pan.baidu.com/s/1KmNB1bzJh0nQUmLX5_LpVw?pwd=1314)
 SPA-Data: [Link](https://pan.baidu.com/s/1s1sA6MRame12Y-csooX7ag?pwd=1314)
 
 # Pretrained Model
-Rain200H_Model: [Link](https://pan.baidu.com/s/1jqelaALzWJgSEgwbpK__0A?pwd=1314)
+Rain200H_Model: [Link](https://pan.baidu.com/s/1Z3N5hOmhhh_SF4mNGanFuQ?pwd=1314)
 
 # Acknowledgement
 This code is based on the [RESCAN](https://github.com/XiaLiPKU/RESCAN). Thank them for their sharing.
